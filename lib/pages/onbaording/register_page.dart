@@ -61,6 +61,15 @@ class _RegisterPage extends State<RegisterPage> {
               ),
             ),
             SizedBox(height: 40),
+            Text(
+              textAlign: TextAlign.center,
+              "Let's Get Started",
+              style: TextStyle(
+                color: Colors.blueGrey,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ],
         ),
       ),
