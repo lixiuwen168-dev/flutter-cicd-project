@@ -1,0 +1,5 @@
+{
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "cmake.sourceDirectory": "D:/app_foods/linux",
+  "DockerRun.DisableDockerrc": true
+}
