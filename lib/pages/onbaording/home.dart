@@ -84,7 +84,12 @@ class _HomeState extends State<Home> {
         children: [
           // Top Fixed Section
           Container(
-            padding: const EdgeInsets.only(left: 20, top: 30, right: 20, bottom: 10),
+            padding: const EdgeInsets.only(
+              left: 20,
+              top: 30,
+              right: 20,
+              bottom: 10,
+            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -95,18 +100,29 @@ class _HomeState extends State<Home> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Image.asset("images/logo.png", width: 90, height: 70),
-                        Text("Order your favorite food!", style: AppWidget.SimpleTextFeildStyle()),
+                        Text(
+                          "Order your favorite food!",
+                          style: AppWidget.simpleTextFieldStyle(),
+                        ),
                       ],
                     ),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(15),
-                      child: Image.asset("images/hq720.jpg", width: 60, height: 60, fit: BoxFit.cover),
+                      child: Image.asset(
+                        "images/hq720.jpg",
+                        width: 60,
+                        height: 60,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ],
                 ),
                 const SizedBox(height: 15),
                 Container(
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.white),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.white,
+                  ),
                   child: const TextField(
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.search),
@@ -122,7 +138,9 @@ class _HomeState extends State<Home> {
                     scrollDirection: Axis.horizontal,
                     itemCount: categories.length,
                     itemBuilder: (context, index) {
-                      return CategoryWidget(image: categorieImages[index]["image"]);
+                      return CategoryWidget(
+                        image: categorieImages[index]["image"],
+                      );
                     },
                   ),
                 ),
@@ -141,14 +159,32 @@ class _HomeState extends State<Home> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("All Food", style: GoogleFonts.poppins(fontSize: 20, fontWeight: FontWeight.bold)),
+                      Text(
+                        "All Food",
+                        style: GoogleFonts.poppins(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       InkWell(
                         onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (_) => const AllProductsPage()));
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => const AllProductsPage(),
+                            ),
+                          );
                         },
                         child: const Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text("See All", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.deepOrange)),
+                          child: Text(
+                            "See All",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.deepOrange,
+                            ),
+                          ),
                         ),
                       ),
                     ],
@@ -182,12 +218,13 @@ class _HomeState extends State<Home> {
                     shrinkWrap: true,
                     physics: const NeverScrollableScrollPhysics(),
                     padding: const EdgeInsets.only(bottom: 10),
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      crossAxisSpacing: 10,
-                      mainAxisSpacing: 10,
-                      childAspectRatio: 0.75,
-                    ),
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                          crossAxisSpacing: 10,
+                          mainAxisSpacing: 10,
+                          childAspectRatio: 0.75,
+                        ),
                     itemCount: getCurrentList().length,
                     itemBuilder: (context, index) {
                       var list = getCurrentList();
@@ -198,7 +235,7 @@ class _HomeState extends State<Home> {
                             context,
                             MaterialPageRoute(
                               builder: (context) => DetailPage(
-                                product: list[index],                    // ← Fixed here
+                                product: list[index], // ← Fixed here
                                 cart: widget.cart,
                                 favorites: widget.favorites,
                                 onCartUpdated: widget.onCartUpdated,
@@ -235,10 +272,15 @@ class CategoryWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(right: 20),
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.white),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        color: Colors.white,
+      ),
       width: 120,
       height: 120,
-      child: Center(child: Image.asset(image, fit: BoxFit.contain, height: 100, width: 100)),
+      child: Center(
+        child: Image.asset(image, fit: BoxFit.contain, height: 100, width: 100),
+      ),
     );
   }
 }

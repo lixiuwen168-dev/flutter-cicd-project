@@ -21,7 +21,7 @@ class _OnbaordingState extends State<Onbaording> {
           children: [
             Image.asset("images/pic1.png"),
             SizedBox(height: 20),
-            Text( 
+            Text(
               "The Fastest\nFood Delivery",
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -35,9 +35,9 @@ class _OnbaordingState extends State<Onbaording> {
               "Craving Something delicious?"
               "\nOrder now and get your favorite"
               "\ndelivery fast!",
-              style: AppWidget.SimpleTextFeildStyle(),
+              style: AppWidget.simpleTextFieldStyle(),
               textAlign: TextAlign.center,
-            ), 
+            ),
             SizedBox(height: 50),
             Padding(
               padding: const EdgeInsets.all(8.0),
