@@ -61,6 +61,32 @@ class _RegisterPage extends State<RegisterPage> {
               ),
             ),
             SizedBox(height: 40),
+            Container(
+              margin: EdgeInsets.only(left: 20, right: 20),
+              child: SizedBox(
+                height: 60,
+                width: double.infinity,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                  onPressed: () {
+                    // Handle registration logic here
+                  },
+                  child: Text(
+                    "Register",
+                    style: TextStyle(
+                      color: Colors.blueGrey,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
