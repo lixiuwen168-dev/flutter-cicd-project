@@ -44,9 +44,8 @@ class _RegisterPage extends State<RegisterPage> {
             ),
             SizedBox(height: 30),
             Container(
-              margin: EdgeInsets.only(left: 20, right: 20), 
+              margin: EdgeInsets.only(left: 20, right: 20),
               child: Column(
-                
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
@@ -91,7 +90,7 @@ class _RegisterPage extends State<RegisterPage> {
             SizedBox(height: 20),
             Text(
               textAlign: TextAlign.center,
-              "Already have an account? Login",
+              "Get for app and start enjoying your favorite meals with just a few taps!",
               style: TextStyle(
                 color: Colors.blueGrey,
                 fontSize: 18,
