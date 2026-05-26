@@ -91,7 +91,7 @@ class _RegisterPage extends State<RegisterPage> {
             SizedBox(height: 20),
             Text(
               textAlign: TextAlign.center,
-              "testing for the text",
+              "Already have an account? Login",
               style: TextStyle(
                 color: Colors.blueGrey,
                 fontSize: 18,
