@@ -90,7 +90,7 @@ class _RegisterPage extends State<RegisterPage> {
             SizedBox(height: 20),
             Text(
               textAlign: TextAlign.center,
-              "Get for app and start enjoying your favorite meals with just a few taps!",
+              " Already have an account? Login",
               style: TextStyle(
                 color: Colors.blueGrey,
                 fontSize: 18,
