@@ -56,7 +56,7 @@ class _HomeState extends State<Home> {
   List<dynamic> getCurrentList() {
     switch (selectedIndex) {
       case 0:
-        return burger;
+
       case 1:
         return salad;
       case 2:

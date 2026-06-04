@@ -1,6 +1,6 @@
 import 'package:app_foods/components/order.dart';
 import 'package:app_foods/components/profile.dart';
-import 'package:app_foods/components/wallet.1dart';
+import 'package:app_foods/components/wallet.dart';
 import 'package:app_foods/pages/onbaording/home.dart';
 import 'package:flutter/material.dart';
 
@@ -28,7 +28,7 @@ class _MainPageState extends State<MainPage> {
   int currentIndex = 0;
 
   final List<Widget> pages = [
-    const Home(cart: [], favorites: [],),
+    const Home(cart: [], favorites: []),
     const Order(),
     const Wallet(),
     const Profile(),

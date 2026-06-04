@@ -1,6 +1,6 @@
 import 'package:app_foods/components/order.dart';
 import 'package:app_foods/components/profile.dart';
-import 'package:app_foods/components/wallet.1dart';
+import 'package:app_foods/components/wallet.dart';
 import 'package:flutter/material.dart';
 import 'home.dart';
 
@@ -14,7 +14,7 @@ class BottomNav extends StatefulWidget {
 class _BottomNavState extends State<BottomNav> {
   // Pages
   final List<Widget> _pages = [
-    const Home(cart: [], favorites: [],),
+    const Home(cart: [], favorites: []),
     const Order(),
     const Wallet(),
     const Profile(),
@@ -33,7 +33,7 @@ class _BottomNavState extends State<BottomNav> {
         unselectedItemColor: Colors.grey,
         onTap: (index) {
           setState(() {
-            _currentTabIndex = index; 
+            _currentTabIndex = index;
           });
         },
         backgroundColor: Color(0xFFE6F0FF),
