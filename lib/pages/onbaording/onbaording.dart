@@ -30,7 +30,7 @@ class _OnbaordingState extends State<Onbaording> {
                 color: Colors.black87,
               ),
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 30),  
             Text(
               "Craving Something delicious?"
               "\nOrder now and get your favorite"

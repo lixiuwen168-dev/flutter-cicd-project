@@ -11,7 +11,7 @@ class _OrderState extends State<Order> {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text("Order Page", style: TextStyle(fontSize: 24)),
+      child: Text("Wallet Page", style: TextStyle(fontSize: 24)),
     );
   }
 }

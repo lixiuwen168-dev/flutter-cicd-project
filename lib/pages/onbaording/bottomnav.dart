@@ -1,6 +1,6 @@
 import 'package:app_foods/components/order.dart';
 import 'package:app_foods/components/profile.dart';
-import 'package:app_foods/components/wallet.dart';
+import 'package:app_foods/components/wallet.1dart';
 import 'package:flutter/material.dart';
 import 'home.dart';
 

@@ -224,6 +224,7 @@ class _DetailPageState extends State<DetailPage> {
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
                           ),
+                          
                         ),
                       ),
                     ],
