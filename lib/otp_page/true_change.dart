@@ -1,5 +1,6 @@
 import 'package:app_foods/pages/onbaording/login_page.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ConfirmPage extends StatefulWidget {
   const ConfirmPage({super.key});
@@ -28,7 +29,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
               SizedBox(height: 20,),
               Center(
                 child: Text("Password Changed!",
-                  style: TextStyle(
+                  style: GoogleFonts.poppins(
                     color: Colors.black,
                     fontSize: 22,
                     fontWeight: FontWeight.bold,)
@@ -38,9 +39,10 @@ class _ConfirmPageState extends State<ConfirmPage> {
               Center(
                 child: Text(textAlign: TextAlign.center,
                   "Password has been changed successfully",
-                  style: TextStyle(
+                  style: GoogleFonts.poppins(
                     color: Colors.black,
                     fontSize: 18,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
@@ -65,7 +67,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
                     },
                     child: Text(
                       "BACK TO LOGIN",
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
                         color: Colors.white,
                         fontSize: 20,
                         fontWeight: FontWeight.bold,

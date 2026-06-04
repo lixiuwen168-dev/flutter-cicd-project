@@ -56,7 +56,6 @@ class _HomeState extends State<Home> {
   List<dynamic> getCurrentList() {
     switch (selectedIndex) {
       case 0:
-
       case 1:
         return salad;
       case 2:
@@ -175,11 +174,11 @@ class _HomeState extends State<Home> {
                             ),
                           );
                         },
-                        child: const Padding(
+                        child: Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Text(
                             "See All",
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
                               color: Colors.deepOrange,

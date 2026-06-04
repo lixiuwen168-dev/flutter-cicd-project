@@ -1,5 +1,6 @@
 import 'package:app_foods/otp_page/resetpassword_page.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../pages/onbaording/login_page.dart';
 
@@ -30,7 +31,7 @@ class _WrongChangeState extends State<WrongChange> {
                   SizedBox(height: 20,),
                   Center(
                     child: Text("Password Changing Failed!",
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                           color: Colors.black,
                           fontSize: 22,
                           fontWeight: FontWeight.bold,)
@@ -40,7 +41,7 @@ class _WrongChangeState extends State<WrongChange> {
                   Center(
                     child: Text(textAlign: TextAlign.center,
                       "There's a temporary problem with the service. Please try again later.",
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
                         color: Colors.black,
                         fontSize: 18,
                       ),
@@ -67,7 +68,7 @@ class _WrongChangeState extends State<WrongChange> {
                         },
                         child: Text(
                           "TRY AGAIN",
-                          style: TextStyle(
+                          style: GoogleFonts.poppins(
                             color: Colors.black,
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
@@ -97,7 +98,7 @@ class _WrongChangeState extends State<WrongChange> {
                         },
                         child: Text(
                           "BACK TO LOGIN",
-                          style: TextStyle(
+                          style: GoogleFonts.poppins(
                             color: Colors.white,
                             fontSize: 20,
                             fontWeight: FontWeight.bold,

@@ -73,9 +73,9 @@ class _BothRegisterLoginPageState extends State<BothRegisterLoginPage> {
                       ),
                     );
                   },
-                  child: const Text(
+                  child: Text(
                     "Register",
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                       color: Colors.black87,
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
@@ -139,9 +139,9 @@ class _BothRegisterLoginPageState extends State<BothRegisterLoginPage> {
                       ),
                     );
                   },
-                  child: const Text(
+                  child:  Text(
                     "Login",
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                       color: Colors.black87,
                       fontSize: 22,
                       fontWeight: FontWeight.bold,

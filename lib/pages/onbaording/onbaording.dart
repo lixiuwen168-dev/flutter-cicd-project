@@ -1,5 +1,6 @@
 import 'package:app_foods/service/wiget_support.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'both_register_login_page.dart';
 
@@ -24,7 +25,7 @@ class _OnbaordingState extends State<Onbaording> {
             Text(
               "The Fastest\nFood Delivery",
               textAlign: TextAlign.center,
-              style: TextStyle(
+              style: GoogleFonts.poppins(
                 fontSize: 40,
                 fontWeight: FontWeight.bold,
                 color: Colors.black87,
@@ -35,7 +36,7 @@ class _OnbaordingState extends State<Onbaording> {
               "Craving Something delicious?"
               "\nOrder now and get your favorite"
               "\ndelivery fast!",
-              style: AppWidget.simpleTextFieldStyle(),
+              style: GoogleFonts.poppins(),
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 50),
@@ -62,7 +63,7 @@ class _OnbaordingState extends State<Onbaording> {
                   child: Text(
                     textAlign: TextAlign.center,
                     "Get Start",
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                       color: Colors.blueGrey,
                       fontSize: 30,
                       fontWeight: FontWeight.bold,

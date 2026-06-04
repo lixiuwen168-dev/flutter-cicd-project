@@ -1,8 +1,6 @@
-
-
-
 import 'package:app_foods/pages/onbaording/login_page.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'otp_page.dart';
 
@@ -43,7 +41,7 @@ class _ForgetpasswordPageState extends State<ForgetpasswordPage> {
                 SizedBox(width: 10),
                 Text(
                   "For Got Password",
-                  style: TextStyle(
+                  style: GoogleFonts.poppins(
                     color: Colors.black,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -66,7 +64,7 @@ class _ForgetpasswordPageState extends State<ForgetpasswordPage> {
                 child: Text(
                   textAlign: TextAlign.center,
                   "Please write your email address to receive a link to create a new password via email",
-                  style: TextStyle(
+                  style: GoogleFonts.poppins(
                     color: Colors.black,
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -89,7 +87,10 @@ class _ForgetpasswordPageState extends State<ForgetpasswordPage> {
                   fillColor: Colors.white,
                   label: Text(
                     "Enter email Address",
-                    style: TextStyle(color: Colors.black, fontSize: 18),
+                    style: GoogleFonts.poppins(
+                      color: Colors.black,
+                      fontSize: 18,
+                    ),
                   ),
                   hintText: "Email",
                 ),
@@ -116,7 +117,7 @@ class _ForgetpasswordPageState extends State<ForgetpasswordPage> {
                   },
                   child: Text(
                     "Confirm Email",
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                       color: Colors.white,
                       fontSize: 20,
                       fontWeight: FontWeight.bold,

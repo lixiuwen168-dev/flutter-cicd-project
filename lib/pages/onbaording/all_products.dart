@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../../data/burger_data.dart';
 import '../../data/pizza_data.dart';
 import '../../data/salad_data.dart';
@@ -51,7 +52,11 @@ class _AllProductsPageState extends State<AllProductsPage> {
                       Stack(
                         children: [
                           IconButton(
-                            icon: const Icon(Icons.favorite),
+                            icon: const Icon(
+                              Icons.favorite,
+                              size: 28,
+                              color: Colors.grey,
+                            ),
                             onPressed: () {
                               Navigator.push(
                                 context,
@@ -74,7 +79,7 @@ class _AllProductsPageState extends State<AllProductsPage> {
                                 ),
                                 child: Text(
                                   "${favorites.length}",
-                                  style: const TextStyle(
+                                  style: GoogleFonts.poppins(
                                     fontSize: 10,
                                     color: Colors.white,
                                   ),
@@ -86,7 +91,11 @@ class _AllProductsPageState extends State<AllProductsPage> {
                       Stack(
                         children: [
                           IconButton(
-                            icon: const Icon(Icons.shopping_cart),
+                            icon: const Icon(
+                              Icons.shopping_cart,
+                              size: 28,
+                              color: Colors.grey,
+                            ),
                             onPressed: () {
                               Navigator.push(
                                 context,
@@ -108,7 +117,7 @@ class _AllProductsPageState extends State<AllProductsPage> {
                                 ),
                                 child: Text(
                                   "${cart.length}",
-                                  style: const TextStyle(
+                                  style: GoogleFonts.poppins(
                                     fontSize: 10,
                                     color: Colors.white,
                                   ),
@@ -159,7 +168,10 @@ class _AllProductsPageState extends State<AllProductsPage> {
                         });
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
-                            content: Text("${product.name} added to cart!"),
+                            content: Text(
+                              "${product.name} added to cart!",
+                              style: GoogleFonts.poppins(),
+                            ),
                           ),
                         );
                       },
@@ -241,7 +253,7 @@ class ProductCard extends StatelessWidget {
                   ),
                   child: Image.asset(
                     image,
-                    height: 140,
+                    height: 120,
                     width: double.infinity,
                     fit: BoxFit.cover,
                   ),
@@ -269,7 +281,7 @@ class ProductCard extends StatelessWidget {
                 children: [
                   Text(
                     name,
-                    style: const TextStyle(
+                    style: GoogleFonts.poppins(
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
                     ),
@@ -277,7 +289,7 @@ class ProductCard extends StatelessWidget {
                   const SizedBox(height: 4),
                   Text(
                     "\$${price.toStringAsFixed(2)}",
-                    style: const TextStyle(
+                    style: GoogleFonts.poppins(
                       fontSize: 14,
                       color: Colors.green,
                       fontWeight: FontWeight.bold,
@@ -288,7 +300,10 @@ class ProductCard extends StatelessWidget {
                     description,
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(fontSize: 12, color: Colors.grey),
+                    style: GoogleFonts.poppins(
+                      fontSize: 12,
+                      color: Colors.grey,
+                    ),
                   ),
                 ],
               ),
@@ -311,7 +326,7 @@ class ProductCard extends StatelessWidget {
                       padding: const EdgeInsets.all(6),
                       child: const Icon(
                         Icons.shopping_cart,
-                        color: Colors.white,
+                        color: Color.fromARGB(255, 231, 128, 128),
                         size: 20,
                       ),
                     ),
@@ -348,7 +363,12 @@ class FavoritesPage extends StatelessWidget {
         backgroundColor: Colors.deepOrange,
       ),
       body: favorites.isEmpty
-          ? const Center(child: Text("No favorites yet."))
+          ? Center(
+              child: Text(
+                "No favorites yet.",
+                style: GoogleFonts.poppins(fontSize: 18),
+              ),
+            )
           : ListView.builder(
               itemCount: favorites.length,
               itemBuilder: (context, index) {
@@ -396,9 +416,12 @@ class CartPage extends StatelessWidget {
                     icon: const Icon(Icons.arrow_back),
                     onPressed: () => Navigator.pop(context),
                   ),
-                  const Text(
+                  Text(
                     "My Cart",
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                    style: GoogleFonts.poppins(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
 
                   /// MENU BUTTON
@@ -431,11 +454,11 @@ class CartPage extends StatelessWidget {
 
             /// EMPTY CART
             if (cart.isEmpty)
-              const Expanded(
+              Expanded(
                 child: Center(
                   child: Text(
                     "Your cart is empty",
-                    style: TextStyle(fontSize: 18),
+                    style: GoogleFonts.poppins(fontSize: 18),
                   ),
                 ),
               )
@@ -490,7 +513,7 @@ class CartPage extends StatelessWidget {
                               children: [
                                 Text(
                                   item.name,
-                                  style: const TextStyle(
+                                  style: GoogleFonts.poppins(
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold,
                                   ),
@@ -498,7 +521,7 @@ class CartPage extends StatelessWidget {
                                 const SizedBox(height: 8),
                                 Text(
                                   "\$${item.price}",
-                                  style: const TextStyle(
+                                  style: GoogleFonts.poppins(
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold,
                                   ),
@@ -512,9 +535,11 @@ class CartPage extends StatelessWidget {
                             children: [
                               quantityButton(Icons.remove),
                               const SizedBox(width: 10),
-                              const Text(
+                              Text(
                                 "1",
-                                style: TextStyle(fontWeight: FontWeight.bold),
+                                style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                               const SizedBox(width: 10),
                               quantityButton(Icons.add, isGreen: true),
@@ -590,10 +615,10 @@ class CartPage extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(title, style: const TextStyle(fontSize: 16)),
+        Text(title, style: GoogleFonts.poppins(fontSize: 16)),
         Text(
           value,
-          style: TextStyle(
+          style: GoogleFonts.poppins(
             fontSize: 16,
             fontWeight: FontWeight.bold,
             color: isGreen ? Colors.green : Colors.black,

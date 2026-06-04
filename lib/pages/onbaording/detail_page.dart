@@ -114,7 +114,10 @@ class _DetailPageState extends State<DetailPage> {
                   const SizedBox(height: 10),
                   Text(
                     widget.product.detail ?? "",
-                    style: const TextStyle(fontSize: 18, color: Colors.black54),
+                    style: GoogleFonts.poppins(
+                      fontSize: 18,
+                      color: Colors.black54,
+                    ),
                   ),
                   const SizedBox(height: 20),
                   const AddSizeQuantity(),
@@ -174,9 +177,12 @@ class _DetailPageState extends State<DetailPage> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
+                      Text(
                         "Total Price",
-                        style: TextStyle(fontSize: 14, color: Colors.black54),
+                        style: GoogleFonts.poppins(
+                          fontSize: 14,
+                          color: Colors.black54,
+                        ),
                       ),
                       Text(
                         "\$${(widget.product.price * quantity).toStringAsFixed(2)}",

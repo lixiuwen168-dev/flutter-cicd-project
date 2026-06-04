@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -35,7 +36,7 @@ class _RegisterPage extends State<RegisterPage> {
             Center(
               child: Text(
                 "Welcome Register Page",
-                style: TextStyle(
+                style: GoogleFonts.poppins(
                   color: Colors.black,
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
@@ -51,7 +52,7 @@ class _RegisterPage extends State<RegisterPage> {
                   Text(
                     textAlign: TextAlign.center,
                     "Register now and start enjoying your favorite meals with just a few taps!",
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                       color: Colors.blueGrey,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -78,7 +79,7 @@ class _RegisterPage extends State<RegisterPage> {
                   },
                   child: Text(
                     "Register",
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                       color: Colors.blueGrey,
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
@@ -91,7 +92,7 @@ class _RegisterPage extends State<RegisterPage> {
             Text(
               textAlign: TextAlign.center,
               " Already have an account? Login",
-              style: TextStyle(
+              style: GoogleFonts.poppins(
                 color: Colors.blueGrey,
                 fontSize: 18,
                 fontWeight: FontWeight.bold,

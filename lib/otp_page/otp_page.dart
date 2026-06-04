@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class OtpPage extends StatefulWidget {
   const OtpPage({super.key});
@@ -36,7 +37,7 @@ class _OtpPageState extends State<OtpPage> {
                 SizedBox(width: 10),
                 Text(
                   "Forgot OTP Code ",
-                  style: TextStyle(
+                  style: GoogleFonts.poppins(
                     color: Colors.black,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -59,7 +60,7 @@ class _OtpPageState extends State<OtpPage> {
                 child: Text(
                   textAlign: TextAlign.center,
                   "Verification Code has been sent to your email address",
-                  style: TextStyle(
+                  style: GoogleFonts.poppins(
                     color: Colors.black,
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -71,7 +72,11 @@ class _OtpPageState extends State<OtpPage> {
             Center(
               child: Text(
                 "verification code sent to your email: ",
-                style: TextStyle(color: Colors.black, fontSize: 18),
+                style: GoogleFonts.poppins(
+                  color: Colors.black,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
             SizedBox(height: 20),
@@ -141,7 +146,11 @@ class _OtpPageState extends State<OtpPage> {
             Center(
               child: Text(
                 "Didn't receive the code?",
-                style: TextStyle(color: Colors.black, fontSize: 18),
+                style: GoogleFonts.poppins(
+                  color: Colors.black,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'true_change.dart';
 
@@ -34,7 +35,7 @@ class _ResetpasswordPageState extends State<ResetpasswordPage> {
                 SizedBox(width: 10),
                 Text(
                   "Reset Password",
-                  style: TextStyle(
+                  style: GoogleFonts.poppins(
                     color: Colors.black,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -45,18 +46,15 @@ class _ResetpasswordPageState extends State<ResetpasswordPage> {
             Center(
               child: Column(
                 children: [
-                  Image.asset(
-                    "images/resetpass.png",
-                    width: 200,
-                    height: 200,
-                  )
-                ]
+                  Image.asset("images/resetpass.png", width: 200, height: 200),
+                ],
               ),
             ),
             SizedBox(height: 10),
             Center(
-              child: Text("Enter new password",
-                style: TextStyle(
+              child: Text(
+                "Enter new password",
+                style: GoogleFonts.poppins(
                   color: Colors.black,
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
@@ -64,17 +62,15 @@ class _ResetpasswordPageState extends State<ResetpasswordPage> {
               ),
             ),
             SizedBox(height: 10),
-            Text( textAlign: TextAlign.center,
+            Text(
+              textAlign: TextAlign.center,
               "Your new password must be different from previous used passwords",
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 18,
-              ),
+              style: TextStyle(color: Colors.black, fontSize: 18),
             ),
             SizedBox(height: 20),
             Container(
               margin: EdgeInsets.only(left: 20, right: 20),
-                child: Text("Enter email Address")
+              child: Text("Enter email Address"),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(
@@ -94,8 +90,9 @@ class _ResetpasswordPageState extends State<ResetpasswordPage> {
             ),
             SizedBox(height: 10),
             Container(
-                margin: EdgeInsets.only(left: 20, right: 20),
-                child: Text("Enter password")),
+              margin: EdgeInsets.only(left: 20, right: 20),
+              child: Text("Enter password"),
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(
                 horizontal: 16.0,
@@ -103,19 +100,22 @@ class _ResetpasswordPageState extends State<ResetpasswordPage> {
               ),
               child: TextField(
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(25),
-                    ),
-                    filled: true,
-                    fillColor: Colors.white,
-                    hintText: "Password",
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(25),
+                  ),
+                  filled: true,
+                  fillColor: Colors.white,
+                  hintText: "Password",
                 ),
               ),
             ),
             SizedBox(height: 10),
             Container(
-                margin: EdgeInsets.only(left: 20, right: 20),
-                child: Text("Enter new password")
+              margin: EdgeInsets.only(left: 20, right: 20),
+              child: Text(
+                "Enter new password",
+                style: GoogleFonts.poppins(color: Colors.black, fontSize: 18),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(
@@ -124,12 +124,12 @@ class _ResetpasswordPageState extends State<ResetpasswordPage> {
               ),
               child: TextField(
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(25),
-                    ),
-                    filled: true,
-                    fillColor: Colors.white,
-                    hintText: " Confirm password",
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(25),
+                  ),
+                  filled: true,
+                  fillColor: Colors.white,
+                  hintText: " Confirm password",
                 ),
               ),
             ),
@@ -154,7 +154,7 @@ class _ResetpasswordPageState extends State<ResetpasswordPage> {
                   },
                   child: Text(
                     "Continue",
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                       color: Colors.white,
                       fontSize: 20,
                       fontWeight: FontWeight.bold,

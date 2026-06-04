@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FoodTile extends StatefulWidget {
   final String name;
@@ -35,7 +36,7 @@ class _FoodTileState extends State<FoodTile> {
           ),
           Text(
             widget.name,
-            style: TextStyle(
+            style: GoogleFonts.poppins(
               color: Colors.black87,
               fontWeight: FontWeight.bold,
             ),
@@ -47,12 +48,18 @@ class _FoodTileState extends State<FoodTile> {
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               widget.description,
-              style: TextStyle(color: Colors.black54, fontSize: 15),
+              style: GoogleFonts.poppins(
+                color: Colors.black54,
+                fontSize: 15,
+              ),
             ),
           ),
           Text(
             "\$${widget.price}",
-            style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold),
+            style: GoogleFonts.poppins(
+              color: Colors.green,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ],
       ),
