@@ -1,7 +1,6 @@
 import 'package:app_foods/service/wiget_support.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'both_register_login_page.dart';
 
 class Onbaording extends StatefulWidget {
@@ -63,7 +62,7 @@ class _OnbaordingState extends State<Onbaording> {
                   child: Text(
                     textAlign: TextAlign.center,
                     "Get Start",
-                    style: GoogleFonts.poppins(
+                    style: TextStyle(
                       color: Colors.blueGrey,
                       fontSize: 30,
                       fontWeight: FontWeight.bold,

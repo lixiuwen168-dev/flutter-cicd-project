@@ -91,7 +91,7 @@ class _RegisterPage extends State<RegisterPage> {
             SizedBox(height: 20),
             Text(
               textAlign: TextAlign.center,
-              " Already have an account? Login",
+              " Test CICD",
               style: GoogleFonts.poppins(
                 color: Colors.blueGrey,
                 fontSize: 18,
