@@ -91,7 +91,7 @@ class _RegisterPage extends State<RegisterPage> {
             SizedBox(height: 20),
             Text(
               textAlign: TextAlign.center,
-              " Test CICD",
+              "update project",
               style: GoogleFonts.poppins(
                 color: Colors.blueGrey,
                 fontSize: 18,
