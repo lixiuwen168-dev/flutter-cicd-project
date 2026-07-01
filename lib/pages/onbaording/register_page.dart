@@ -91,7 +91,7 @@ class _RegisterPage extends State<RegisterPage> {
             SizedBox(height: 20),
             Text(
               textAlign: TextAlign.center,
-              "test on jekkin and Docker",
+              "test on jekkin ",
               style: GoogleFonts.poppins(
                 color: Colors.blueGrey,
                 fontSize: 18,
